@@ -1,1 +1,25 @@
 // Mixins Here
+
+.display(@display, @justify, @align){
+    display: @display;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.image(@width, @height, @radius){
+    width: @width;
+    height: @height;  
+    border-radius: @radius;
+}
+
+.custom-btn(@bg, @width, @color){
+    display: block;
+    background-color: @bg;
+    width: @width;
+    color: @color;
+    margin: 0 0 10px;
+    cursor: pointer;    
+    height: 35px;
+    font-size: 1.5rem;
+    border-radius: 5px;    
+}
