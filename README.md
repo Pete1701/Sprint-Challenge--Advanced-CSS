@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+At adaptive layout, widths are hardcoded at each media query and it accommodates different devices at specific breakpoints.
+
+Responsive layout accommodates thousands of devices because media queries are used to constrain responsive units so that as the viewport expands or shrinks gives get an experience that looks and functions well for thousands of devices and screen sizes. It also takes longer to build.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+In desktop first design the webpage is designed primarily for desktop devices and then it is adapted to mobile or other smaller-than-desktop screen sizes. For this we use max-width properties as break points for our design.
+
+In mobile first design it's the opposite, the webpage is designed primarily for mobile devices and then it is adapted for bigger screen sizes. In this case we use min-width properties as break points.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The 16 pixel default font size is reduced to 10 pixel, and rem calculations become much easier because 1rem = 10px. At the same time, we avoid using hard coded pixel values in the html tag that overrides default settings on browsers.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing css is an overlay that we use to produce the css styling file that will be applied to our webpage. This means that we don't actually code the css file, the preprocessing that we use does it for us. There are many, like LESS, SCSS, SASS and more. The preprocessors use advanced features that developers can use  to create easier, faster products with more features than they would with plain CSS. It is what css should be but is difficult to become and will require much time and effort.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite: everything, but most of all the compiler's error notifications.
+Troublesome: none really.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
