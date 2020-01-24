@@ -1,3 +1,11 @@
+@keyframes example {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: paleturquoise;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -267,6 +275,9 @@ footer {
   height: 35px;
   font-size: 1.5rem;
   border-radius: 5px;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
@@ -274,7 +285,7 @@ footer {
   }
 }
 .home .walk .walk-text button:hover {
-  background: white;
+  background-color: white;
   color: gray;
 }
 .home .walk .walk-img {

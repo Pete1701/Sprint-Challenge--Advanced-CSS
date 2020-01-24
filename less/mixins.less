@@ -21,5 +21,12 @@
     cursor: pointer;    
     height: 35px;
     font-size: 1.5rem;
-    border-radius: 5px;    
+    border-radius: 5px;
+    .animation(5s, infinite);
+}
+
+.animation(@duration, @count){
+    animation-name: example;
+    animation-duration: @duration;
+    animation-iteration-count: @count;
 }
